@@ -21,6 +21,6 @@ public class Sequential
         
         sc.close(); //Close scanner
 
-        System.out.println("Tuition Fee: " +TUITIONFEE);    //Output
+        System.out.println("Tuition Fee: " + TUITIONFEE);    //Output
     }
 }
