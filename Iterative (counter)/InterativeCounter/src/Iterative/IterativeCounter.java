@@ -1,4 +1,4 @@
-package IterativeCounter;
+package Iterative;
 import java.util.*;
 
 public class IterativeCounter
