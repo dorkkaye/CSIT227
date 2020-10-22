@@ -1,4 +1,3 @@
-package Sequential;
 import java.util.*;
 
 public class Sequential 
