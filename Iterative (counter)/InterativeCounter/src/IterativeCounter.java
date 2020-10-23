@@ -1,4 +1,3 @@
-package Iterative;
 import java.util.*;
 
 public class IterativeCounter
@@ -22,10 +21,10 @@ public class IterativeCounter
             unitsTotal += unit; //Compute total units
         }
 
-        float GPA = sum / unitsTotal;   //Computing GPA
+        float gpa = sum / unitsTotal;   //Computing GPA
         
-        System.out.println("GPA: " + GPA);
-        if (GPA < 3.0)   
+        System.out.println("GPA: " + gpa);
+        if (gpa < 3.0)   
             System.out.println("Student failed");
         else 
             System.out.println("Student passed");
