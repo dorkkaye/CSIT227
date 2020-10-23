@@ -1,14 +1,1 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+The goals scored in a soccer match may be input as a sequence of 1s and 2s terminated by 0. The number 1 would mean that team 1 made a goal and 2 would mean that team 2 made a goal. Thus the sequence 1 2 1 2 1 1 2 0 means that Team 1 made 4 goals and team 2 made 3 goals in all. Write a program that would input such sequence and output how many goals each team made and the result of the match (“Team 1 won”, ”Team 2 won”, “Both tied”). Ensure that inputs are 0,1 and 2 only.
