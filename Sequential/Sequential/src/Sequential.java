@@ -1,3 +1,4 @@
+package Sequential.src;
 import java.util.*;
 
 public class Sequential 
@@ -10,7 +11,7 @@ public class Sequential
 
         Scanner sc= new Scanner(System.in); //Open scanner
 
-        System.out.println("Enter number of units: ");  //Input 
+        System.out.print("Enter number of units: ");  //Input 
         int UNITS = sc.nextInt();  //Scan
 
         //Formula
