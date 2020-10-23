@@ -21,6 +21,8 @@
 
             goal = sc.nextInt();
         }
+
+        sc.close();
         
         if (goal == 0)
         {
@@ -28,6 +30,7 @@
             System.out.println("\nTeam 1: " + team1);
             System.out.println("Team 2: " + team2);
 
+            //Compare scores
             if (team1 > team2)
                 System.out.println("\nTeam 1 won");
             else if (team1 < team2)
@@ -37,7 +40,5 @@
         }
         else
              System.out.println("Invalid input");
-
-         sc.close();
      }
  }

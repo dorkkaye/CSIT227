@@ -17,11 +17,11 @@ public class IterativeCounter
             System.out.print("Unit for subject " + j + ": ");  
             unit = sc.nextInt();
 
-            sum += grade * unit;    //Compute sum of subjects per unit
-            unitsTotal += unit; //Compute total units
+            sum += grade * unit;    //Sum of subjects per unit
+            unitsTotal += unit; //Total units
         }
 
-        float gpa = sum / unitsTotal;   //Computing GPA
+        float gpa = sum / unitsTotal;   //GPA
         
         System.out.println("GPA: " + gpa);
         if (gpa < 3.0)   

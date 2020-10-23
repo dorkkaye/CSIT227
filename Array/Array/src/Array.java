@@ -7,12 +7,12 @@ public class Array
         int size = 10, count = 0;
         
          //Declare and assign size
-        int[] gross = new int[size]; 
+        int[] gross = new int[size];    //Per week
         double[] salary = new double[size];
 
         Scanner sc = new Scanner(System.in);
 
-        for(int i = 0, j = 1; i < 10; i++, j++)
+        for(int i = 0, j = 1; i < gross.length; i++, j++)
         {
             System.out.print("Input gross of salesperson " + j + ": ");
             gross[i] = sc.nextInt();
@@ -24,8 +24,8 @@ public class Array
                 count++;
         }
 
-        System.out.println("Number of salesperson who earned more than 500: " + count);
-
         sc.close();
+
+        System.out.println("\nNumber of salesperson who earned more than 500: " + count);
     }
 }

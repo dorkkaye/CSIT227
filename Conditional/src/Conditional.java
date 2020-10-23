@@ -8,40 +8,47 @@ public class Conditional
         float price;   
         double percentage;
 
-        Scanner sc= new Scanner(System.in); //Open scanner
+        Scanner sc= new Scanner(System.in); 
 
-        System.out.println("Enter appliance type (1-4): ");  //Input 
-        type = sc.nextInt();    //Scan
-        System.out.println("Enter sale price: ");   //input
+        System.out.print("Enter appliance type (1-4): ");  
+        type = sc.nextInt();    
+        System.out.print("Enter sale price: ");   
         price = sc.nextInt();
 
-        sc.close(); //Close scanner
+        sc.close(); 
 
         switch(type)
         {
-            case 1:
-                percentage = price * 0.07;
-
-                //Type 1
+            //Type 1
+            case 1: 
+                percentage = price * 0.07;  //Percentage of the sale
+                
                 if (percentage > 400)
-                    System.out.println("Commision: " + percentage); //Output
+                    System.out.println("Commision: " + percentage); 
                 else
-                    System.out.println("Commision: " + 400);    //Output
+                    System.out.println("Commision: " + 400);    
                 break;
+            
+            //Type 2
             case 2:
-                percentage = price * 0.10;
+                percentage = price * 0.10;  //Percentage of the sale
 
-                //Type 2
                 if (percentage > 900)
-                    System.out.println("Commision: " + 900);    //Output
+                    System.out.println("Commision: " + 900);    
                 else
-                    System.out.println("Commision: " + percentage); //Output
+                    System.out.println("Commision: " + percentage); 
                 break;
+
+            //Type 3 
             case 3:
-                System.out.println("Commision: " + 0.12); //Type 3 
+                percentage = price * 0.12;  //Percentage of the sale
+
+                System.out.println("Commision: " + percentage); 
                 break;
+            
+            //Type 4
             case 4:
-                System.out.println("Commision: " + 250);    //Type 4
+                System.out.println("Commision: " + 250);    
                 break;
             default:
                 System.out.println("Please input a valid input.");  //Input is not from 1-4
