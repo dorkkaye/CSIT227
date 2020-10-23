@@ -1,5 +1,3 @@
-package ENGBINO_KAYE;
-
 public class HelloWorld 
 {
     public static void main(String[] args)
