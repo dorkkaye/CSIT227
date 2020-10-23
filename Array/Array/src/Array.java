@@ -5,7 +5,9 @@ public class Array
     public static void main ( String[] array)
     {
         int size = 10, count = 0;
-        int[] gross = new int[size];  //Declare and assign size
+        
+         //Declare and assign size
+        int[] gross = new int[size]; 
         double[] salary = new double[size];
 
         Scanner sc = new Scanner(System.in);
