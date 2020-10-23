@@ -8,18 +8,18 @@
 
          Scanner sc = new Scanner(System.in);
 
-         System.out.println("Goals scored in a soccer match: ");
-         goal = sc.nextInt();
+         
  
         while (goal == 1 || goal == 2)
         {
+            System.out.println("Goals scored in a soccer match: ");
+             goal = sc.nextInt();
+
             //Tally scores
             if (goal == 1)
                 team1++;
             else if (goal == 2)
                 team2++;
-
-            goal = sc.nextInt();
         }
 
         sc.close();
