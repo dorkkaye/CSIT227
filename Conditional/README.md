@@ -1,14 +1,9 @@
-## Getting Started
+A company selling household appliances gives commissions to its salesman determined by the kind of product sold as well as the sales amount.  
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Type 1: 7% of sale or 400, whichever is more.  
+Type 2: 10% of sale or 900, whichever is less.  
+Type 3: 12% of sale.  
+Type 4: P250, regardless of sale price.  
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Make a program that would input the TYPE of appliance sold (between 1-4) and the sale PRICE (a positive floating-point value), and output the COMMission that the salesman will receive. 
+ 

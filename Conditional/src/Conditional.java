@@ -1,27 +1,26 @@
-package Conditional;
 import java.util.*;
 
 public class Conditional
 {
     public static void main ( String[] args)
     {
-        int TYPE;   //Appliance sold [1-4]
-        float PRICE;   
+        int type;   //Appliance sold [1-4]
+        float price;   
         double percentage;
 
         Scanner sc= new Scanner(System.in); //Open scanner
 
         System.out.println("Enter appliance type (1-4): ");  //Input 
-        TYPE = sc.nextInt();    //Scan
+        type = sc.nextInt();    //Scan
         System.out.println("Enter sale price: ");   //input
-        PRICE = sc.nextInt();
+        price = sc.nextInt();
 
         sc.close(); //Close scanner
 
-        switch(TYPE)
+        switch(type)
         {
             case 1:
-                percentage = PRICE * 0.07;
+                percentage = price * 0.07;
 
                 //Type 1
                 if (percentage > 400)
@@ -30,7 +29,7 @@ public class Conditional
                     System.out.println("Commision: " + 400);    //Output
                 break;
             case 2:
-                percentage = PRICE * 0.10;
+                percentage = price * 0.10;
 
                 //Type 2
                 if (percentage > 900)
