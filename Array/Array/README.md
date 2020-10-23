@@ -1,14 +1,1 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Use a single-subscripted array to solve the following problem. A company pays its salespeople on a commission basis. The salespeople receive Php200 per week plus 9 percent of their gross sales for the week. For example, a salesperson who grosses Php3000 in sales in a week receives Php200 plus 9 percent of Php3000, or a total of Php470. Write a C program that determines how many of the 10 salespeople earned salaries which is more than Php500.
