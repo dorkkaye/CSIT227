@@ -1,1 +1,0 @@
-At the University of Palompon, every unit is worth P45 in enrollment fees. An additional 15% of this amount is paid in miscellaneous fees with a blanket fee of P200 regardless of the load. Write a program to input the number of UNITS a student is enrolled and output the TUTION FEE to be paid. 

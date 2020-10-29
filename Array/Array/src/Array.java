@@ -6,7 +6,7 @@ public class Array
     {
         int size = 10, count = 0;
         
-         //Declare and assign size
+        //Declare and assign size
         int[] gross = new int[size];    //Per week
         double[] salary = new double[size];
 
