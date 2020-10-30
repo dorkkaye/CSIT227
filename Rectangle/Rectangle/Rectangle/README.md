@@ -1,14 +1,17 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Ungraded Exercises: Rectangle
+Problem (Rectangle.java)
+a.       Create a class that uses the Point class to implement a Rectangle. The Rectangle class has two data members:
+           private Point upperLeft - to represent upper left coordinate
+           private Point lowerRight - to represent the lower right coordinate
+b.       Implement the appropriate constructors for the Rectangle class.
+c.       Encapsulate it.
+d.       Implement the following methods:
+                public double length()
+                                - that returns the length of the rectangle
+                public double width()
+                                - that returns the width of the rectangle
+                public double area()
+                                - that returns the area of the rectangle by calling the length()  and width()
+                double perimeter()
+                                - that returns the perimeter of the rectangle by calling the length() and width()
+e.       Override toString() and equals().

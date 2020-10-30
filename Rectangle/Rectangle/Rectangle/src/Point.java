@@ -45,6 +45,7 @@ public class Point
 	public static void main (String[] args)
 	{
 		Rectangle r = new Rectangle(new Point(), new Point());
+		Rectangle r2 = new Rectangle(new Point(-5, 1), new Point(5, -2));
 
 		Scanner sc = new Scanner(System.in);
 
@@ -52,6 +53,11 @@ public class Point
 		r = new Rectangle(new Point(sc.nextInt(), sc.nextInt()), new Point(sc.nextInt(), sc.nextInt()));
 
 		System.out.println(r);
+
+		if(r.equals(r2))
+			System.out.println("Equals");
+		else
+			System.out.println("Not Equals");
 
 		sc.close();
 	}
