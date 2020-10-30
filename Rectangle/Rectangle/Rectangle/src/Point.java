@@ -44,12 +44,14 @@ public class Point
 
 	public static void main (String[] args)
 	{
-		Point p = new Point();
+		Rectangle r = new Rectangle(new Point(), new Point());
 
 		Scanner sc = new Scanner(System.in);
 
-		p = new Point(sc.nextInt(), sc.nextInt());
-		System.out.println(p);
+		System.out.print("Upper left and lower right coordinates: ");
+		r = new Rectangle(new Point(sc.nextInt(), sc.nextInt()), new Point(sc.nextInt(), sc.nextInt()));
+
+		System.out.println(r);
 
 		sc.close();
 	}

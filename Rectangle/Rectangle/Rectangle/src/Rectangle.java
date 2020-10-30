@@ -32,6 +32,19 @@ public class Rectangle
         return lowerRight;
     }
 
+    public String toString()
+	{
+		StringBuffer sb = new StringBuffer();
+
+        sb.append("Rectangle coordinates: (" + upperLeft + ", " + lowerRight + ")");
+        sb.append("\nLength: " + length());
+        sb.append("\nWidth: " + width());
+        sb.append("\nArea: " + area());
+        sb.append("\nPerimeter: " + perimeter());
+
+		return sb.toString();
+	}
+
     public double length()  //x axis
     {
         return area() / width();
@@ -44,11 +57,11 @@ public class Rectangle
 
     public double area()
     {
-        return this.length() * this.width();
+        return length() * width();
     }
 
     public double perimeter()
     {
-       return 2 * (this.length() + this.width());
+       return 2 * (length() + width());
     }
 }
