@@ -1,28 +1,27 @@
-package src;
-
 public class Circle 
 {
-    private int x;
-    private int y;
+    private Point center = new Point();
     private float radius;
 
     public Circle(){}
 
-    public Circle(int x, int y, float radius)
+    public Circle(Point center, float radius)
     {
-        this.x = x;
-        this.y = y;
+        this.center = center;
         this.radius = radius;
     }
 
-    public void setX(int x)
+    public Circle(int x, int y, float radius)
     {
-        this.x = x;
+        this.center.setX(x);
+        this.center.setY(y);
+        this.radius = radius;
     }
 
-    public void setY(int y)
+    public void setCenter(int x, int y)
     {
-        this.y = y;
+       this.center.setX(x);
+       this.center.setY(y);
     }
 
     public void setRadius(float radius)
@@ -30,14 +29,9 @@ public class Circle
         this.radius = radius;
     }
 
-    public int getX()
+    public Point getCenter()
     {
-        return x;
-    }
-
-    public int getY()
-    {
-        return y;
+        return center;
     }
 
     public float getRadius()
@@ -47,7 +41,12 @@ public class Circle
 
     public String toString()
     {
-        return "Radius: " + radius + "\nPoint: (" + x + "," + y + ")";
+        StringBuffer sb = new StringBuffer();
+
+        sb.append(String.format("Radius: %.2f", radius));
+        sb.append("\nPoint: (" + center.getX() + "," + center.getY() + ")");
+
+		return sb.toString();
     }
 
     public boolean equals(Object obj)
@@ -58,7 +57,7 @@ public class Circle
         {
             Circle circ = (Circle)obj;
 
-            if(this.x == circ.x && this.radius == circ.radius && this.y == circ.y)
+            if(this.center.getX() == circ.center.getX() && this.radius == circ.radius && this.center.getY() == circ.center.getY())
                 ans = true;
         }
 
