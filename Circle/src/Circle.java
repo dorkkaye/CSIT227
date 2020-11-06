@@ -5,9 +5,7 @@ public class Circle
     private int x;
     private int y;
 
-    public Circle()
-    {
-    }
+    public Circle(){}
 
     public Circle(Point center, float radius)
     {
@@ -67,7 +65,7 @@ public class Circle
     {
         StringBuffer sb = new StringBuffer();
 
-        sb.append("Radius: " + radius);
+        sb.append(String.format("Radius: %.2f", radius));
         if(this.center == null)
             sb.append("\nPoint: (" + x + "," + y + ")");
         else
