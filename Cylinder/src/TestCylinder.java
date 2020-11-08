@@ -28,6 +28,7 @@ public class TestCylinder
         Area: 2342.06
         Volume: 8659.01*/
 
+        //Equality test
         if(c.equals(c1))
             System.out.println("Equal");
         else
