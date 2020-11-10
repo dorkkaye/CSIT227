@@ -5,7 +5,8 @@ public class Student extends Person
 
     public Student()
     {
-        //implicitly calls Person() or super()
+        /*: implicitly calls Person() or super()
+          : System.out.println("Student constructor");*/
     }
 
     public Student(String course, double tuitionfee)
@@ -17,7 +18,8 @@ public class Student extends Person
 
     public Student(int idno, String name, int age, String course, double tuitionfee)
     {
-        super(idno, name, age); //a call to the superclass constructor
+        super(idno, name, age); /*: A call to the superclass constructor
+                                  : Must be in the first line of the constructor*/
         this.course = course;
         this.tuitionfee = tuitionfee;
     }
