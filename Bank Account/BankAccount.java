@@ -31,7 +31,7 @@ public class BankAccount
     
     public void setAccountName(String accountName)
     {
-       this.accountName = "John Doe";
+       this.accountName = accountName;
     }
     
     public void setBalance(double balance)
@@ -77,7 +77,7 @@ public class BankAccount
     public double deposit(double amount)
     {
         if (amount < 0)
-            return 0;
+            balance = 0;
         else
             balance += amount;
         
@@ -102,7 +102,7 @@ public class BankAccount
     {
         StringBuffer sb = new StringBuffer();
         
-        sb.append(accountNumber + ", " + accountName + ", "+ balance);
+        sb.append(accountNumber + ", " + accountName + ", " + this.balance);
         
         return sb.toString();
     }

@@ -34,6 +34,37 @@ public class CheckingAccount extends BankAccount
 
     public void cashCheck(String payee, double amount)
     {
-        if()
+        if(this.getBalance() >= this.minimum && this.getBalance() >= amount)
+        {
+            double temp = (this.getBalance() - amount) - this.charge;
+            this.setBalance(temp);
+        }
+        else
+            this.deposit(0);
+    }
+
+    public String toString()
+    {
+        StringBuffer sb = new StringBuffer();
+
+        sb.append(super.toString());
+        sb.append(", " + this.minimum + ", " + this.charge);
+
+        return sb.toString();
+    }
+
+    public boolean equals(Object obj)
+    {
+        boolean ans = false;
+        
+        if(obj instanceof CheckingAccount)
+        {
+            CheckingAccount checking = (CheckingAccount)obj;
+            
+            if(super.equals(checking) && this.minimum == checking.minimum && this.charge == checking.charge)
+                ans = true;
+        }
+        
+        return ans;
     }
 }

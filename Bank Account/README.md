@@ -33,3 +33,14 @@ o cash check and debit balance
 
 For cash check – the payee is whom you issue the check. Cash check is only allowed if there is enough money in the account.
  Minimum – maintaining balance of the checking account. There is a charge if balance is less than the maintaining balance.
+
+TestClass.java
+
+Implement method input. This method will create objects. See the picture below as a guide for the values.
+your input method must:
+
+ create 2 objects for Savings( objectA, objectB) and 1 object for checking (objectC)
+ perform a withdraw(objectA) and deposit(objectB) for savings object
+ transfer funds from objectA to objectB (transfer from objectA to objectB)
+ perform cashCheck for objectC
+ After all the operations, call the toString method of each class. refer to the sample output. 
