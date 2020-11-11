@@ -23,3 +23,13 @@ SavingsAccount.java
 
 calculateInterest
 o compute for the annual interest of an account and update the new balance
+
+CheckingAccount.java
+
+cashCheck
+o cash check and debit balance
+the attribute minimum - minimum maintaining balance for a checking account. 
+ the attribute charge - the amount charged if balance < minimum balance. The amount charged will be deducted from the balance if after cash check the balance is less than the minimum balance.
+
+For cash check – the payee is whom you issue the check. Cash check is only allowed if there is enough money in the account.
+ Minimum – maintaining balance of the checking account. There is a charge if balance is less than the maintaining balance.

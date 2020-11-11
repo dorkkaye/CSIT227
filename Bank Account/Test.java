@@ -39,17 +39,6 @@ public class Test
             1000.0
          */
 
-         //Equality test 1
-         if(account1.equals(account2))
-            System.out.println("Equals");
-        else
-            System.out.println("Not Equals");
-
-        //Output
-        /*
-            Not Equals
-        */
-
         //Test 3
         SavingsAccount sa = new SavingsAccount("Acct-001", "Maria Paz", 5000.0, 0.2);
         System.out.println(sa);
@@ -64,18 +53,6 @@ public class Test
             Acct-001, Maria Paz, 5000.0, 0.2
             Acct-001, Maria Paz, 6240.0, 0.2
             Acct-002, John Doe, 5000.0, 0.25
-        */
-
-
-        //Equality test 1
-        if(sa.equals(sa2))
-            System.out.println("Equals");
-        else
-            System.out.println("Not Equals");
-
-        //Output
-        /*
-            Not Equals
         */
     }
 }
