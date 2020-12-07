@@ -4,7 +4,7 @@ public class SentenceCorrect
 {
     public static void main(String[] args) 
     {
-        int tag = 0;
+        int flag = 0;
 
         Scanner sc = new Scanner(System.in);
         String test = sc.nextLine();
@@ -18,14 +18,14 @@ public class SentenceCorrect
         for(int i = 0; i < sb.length(); i++)
         {
             char c = sb.charAt(i);
-            if(tag == 1 && Character.isLetter(c))
+            if(flag == 1 && Character.isLetter(c))
             {
                 sb.setCharAt(i, Character.toUpperCase(c));
-                tag = 0;
+                flag = 0;
             }
 
-            if(c == '?' || c == '.' || c == '!')
-                tag = 1;
+            if(c == '?' || c == '.' || c == '!')    //Checks characters
+                flag = 1;
         }
 
         System.out.println(sb.toString());
@@ -33,12 +33,3 @@ public class SentenceCorrect
         sc.close();
     }
 }
-
-/**
-after a train crashed, every single person died. who survived?all of the couples.
-After a train crashed, every single person died. Who survived?All of the couples.
-turn us on our backs and open up our stomachs, and you will be the wisest but at the start a lummox. what are we? books.
-Turn us on our backs and open up our stomachs, and you will be the wisest but at the start a lummox. What are we? Books.
-help! help! it's an emergency. 
-Help! Help! It's an emergency. 
- */
