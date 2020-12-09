@@ -1,0 +1,1 @@
+Write a program that will compute the factorial of a number. Your program must catch an exception if the input is not a number.
