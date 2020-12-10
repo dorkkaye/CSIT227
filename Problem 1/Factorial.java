@@ -13,9 +13,7 @@ public class Factorial
 
             //Negative inputs
             if(number < 0)
-            {
                 throw new NegativeException("Invalid Input");
-            } 
             else
             {
                 for(int i = 1; i <= number; i++)

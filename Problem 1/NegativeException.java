@@ -9,7 +9,7 @@ class NegativeException extends Exception
     {
         super("Invalid Input");
     }
-
+ 
     public NegativeException(String message)
     {
         super(message);
